@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- build:css css/combined.css -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+	<!-- endbuild -->
+	<title>-</title>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="search">
+			<form action="#" class="search-form">
+				<div class="search-form__block">
+					<label for="name" class="search-form__label">Имя</label>
+					<input type="text" name="name" id="name" class="search-form__input">
+				</div>
+				<div class="search-form__block">
+					<label for="city" class="search-form__label">Город</label>
+					<select name="city" id="city" class="search-form__input">
+						<option value="0"></option>
+					</select>
+				</div>
+			</form>
+		</div>
+		<div class="photo">
+			<div class="photo__container" id="photo-container"></div>
+			<div class="photo__error" id="error">
+				<span class="photo__error_text">Совпадений не найдено</span>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="popup" id="popup">
+    	<div class="popup__content">
+
+    		
+    	</div>
+	</div>
+	<!-- build:js scripts/combined.js -->
+	<script src="data/photos_db.js"></script>
+	<script src="js/main.js"></script>
+    <!-- endbuild -->
+</body>
+</html>
